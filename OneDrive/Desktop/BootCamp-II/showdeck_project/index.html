@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesheet/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> 
+    <title>ShowDeck</title>
+</head>
+<body>
+
+<div class="general-div   prt">
+      <div class="container-fluid "  >
+        <header class=" d-flex align-items-center col-12 py-lg-2  flex-wrap ">
+        
+                      <!-- logo-section  -->
+          <div class="col-8 col-lg-8 d-flex align-items-center"> 
+              <img src="./Chowdeck_images/logo.jpg" alt="logo-img" height="44" style="border-radius: 8px;">
+                <div class=" mt-3 ms-3 ms-lg-4">
+                <!-- Button trigger modal -->
+              <p type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal" class="d-block d-lg-none" style="font-size: 15px;">
+                <i class="bi bi-geo-alt-fill" style="color: green;" ></i>
+                  Enter Address <i class="bi bi-chevron-down" style="font-size: 10px;"></i>
+              </p>
+            
+              <p type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal" class="d-none d-lg-block" style="font-size: 14px;">
+                <i class="bi bi-geo-alt-fill" style="color: green;"></i>
+                  21 Kayode St <i class="bi bi-chevron-down" style="font-size: 10px;"></i>
+              </p>
+
+            <!-- Modal -->
+            <div class="modal fade modal-div" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h3 class="modal-title fs-5" id="exampleModalLabel">Delivery Address</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body geo-div" style="height: 80vh; ">
+                    
+                  
+                    <input type="text" placeholder="Enter your Address" class="col-12 py-3  px-4 border border-none rounded-1  modal-input" style="background-color: #EDF2FA;">
+                      <i class="bi bi-geo-alt-fill" style="color: green; position: absolute; left: 20px; top: 34px;"></i> 
+                  
+
+                      <div>
+                          <div class="d-flex mt-3 gap-1 ">
+                            <i class="bi bi-cursor" style="color: green;"></i>
+                                <div class="max-font  text-start"  style="font-weight: 600;">use your current location
+                                  <p class="mini-font" style="color: rgb(149, 147, 147);">7 Unity Cres , Akansan Igando , Lagos 1109635 Lagos, Nigeria</p>
+                                </div>
+                          </div>
+                      </div>
+                  </div>
+            
+                </div>
+              </div>
+            </div>
+
+              </div>
+          </div>
+                      <!-- input section  -->
+          <div class="col-12 col-lg-3 input=div  order-3 mt-3 mt-lg-0 " style="position: relative;">
+              <i class="bi bi-search d-none d-lg-block text-success" style="position: absolute; top: 8px; left: 20px; font-size: 14px;" ></i>
+              <input type="text" class=" col-12 rounded-1 px-3 px-lg-5 lg-input border border-none modal-input rounded-2 rounded-lg-none py-2 py-lg-1" placeholder="search..." style="background-color: #F2F2F2; padding: 6px 0px;" >
+          </div>
+                      <!-- cart section  -->
+        <div class="text-end col-4  col-lg-1 cart-div order-lg-3"  >
+              <i class="bi bi-cart  nav-icon" style="background-color: #0C513F; color: white; border-radius: 50%;"></i>
+              <i class="bi bi-person nav-icon "  style="background-color: #0C513F; color: white; border-radius: 50%;"></i>
+        
+        </div> 
+        </header>
+      </div>
+</div>
+
+ <div class="container-fluid div-body">
+   <div class="row">
+    <main class="col-lg-8">
+      <section>
+        <!-- fixed button  -->
+   <div class="text-center d-lg-none">
+    <button class="col-11 d-flex justify-content-between text-light border border-0 px-3 mx-auto rounded-3 milinal-font last-btn last-btn-div" style="background-color: #0C513F; position: fixed; right: 20px; bottom: 40px;">
+       <p class="mt-3">Proceed to order 1 item</p>
+       <p class="mt-3">#700</p>
+   </button>
+</div>   
+              <div  style="position: relative; " class="my-2">
+                <p class="d-none d-lg-block text-success"><i class="bi bi-arrow-left text-success" ></i> Resturants</p>
+                <img src="./Chowdeck_images/Hero-images.jpg"  alt="hero-img" class="col-12   hero-img" style="border-radius: 10px;"> 
+                <button class="py-2 px-3 border border-success text-success rounded-2" style="position: absolute; left: 23px; bottom: 30px;"> <i class="bi bi-clock px-1" style="font-size: 12px; "></i>11 - 21 mins</button>
+              </div>
+          </section>
+          <div class=" d-flex flex-wrap">
+            
+               <!-- Hot Bread Div  -->
+              <div class=" d-flex justify-content-between align-items-center justify-content-lg-start  col-12 col-lg-9 ">
+                    <p style="font-size: 26px; font-weight: 600; ">Hot Bread Cafe-Ikotun</p>
+                    <p style="font-size: 19px;" class=" mx-lg-2 mt-lg-1">2.0 <img src="./Chowdeck_images/" alt="">
+                        <i class="bi bi-star-fill " style="font-size: 18px;"> <span style="font-size: 13px;">(4)</span></i>
+                    </p>
+              </div>
+                     <!-- onclick Btn div  -->
+              <div style="background-color: #E6F7F1; " class="d-flex justify-content-between my-2 my-lg-3  col-12 col-lg-3 p-1  rounded-2 align-items-center btn-div border border-1 border-dark">    
+                  <button id="Fbtn" class=" btn   col col-lg-7 " style="font-size: 14px; background-color: #198754; color: white;">
+                    Deliver now</button>
+                  <button id="Mbtn" class="btn col text-center " style="font-size: 14px;">Pick up</button>
+              </div>
+                  <!-- intercontiental div  -->
+                <div class="col-6 col-lg-12 inter-div">
+                      <p class="text-success general-div pt-lg-2 py-lg-4" >Intercontinental</p>
+                </div>
+                     <!-- time div  -->
+                <div class="d-flex flex-column  col-6 col-lg-6 text-end text-lg-start my-1 my-lg-2">
+                    <span class=" d-none d-lg-block " style="font-weight: 500;">Opening Time</span>
+                    <span class="text-secondary">09:00 am - 08:00 pm</span>  
+                </div>
+                    <!-- min order  -->
+                     <div class="col-12 col-lg-6 text-lg-end my-1 my-lg-2 min-order">
+                     <p class="text-success">Min Order: ₦0</p>
+                    </div>
+
+          </div>          
+             <!-- nav section  -->
+          <div class="general-div mt-lg-3">
+            <nav class="my-2 my-md-0 d-flex  justify-content-between   nav-for-span col-12 col-lg-11  gap-4 pb-lg-3 pt-lg-"  >
+                <span class="mini"><a href=""> All </a></span> 
+              <span class="mini col-3 col-lg-2"><a href="">MAIN MENU </a> </span> 
+               <span class="mini"> <a href="">RICE </a></span>  
+                <span class="mini" > <a href="http://" target="_blank" rel="noopener noreferrer">PROTEIN</a> </span> 
+                 <span class="mini"><a href="">SIDES </a> </span>  
+                    <span class="mini"><a href="">BREAD </a> </span>  
+                      <span class="mini "><a href="">PASTRIES</a></span> 
+                        <span class="mini col-3 col-lg-2"> <a href=""> ICE CREAM
+                        </a></span>  
+                      
+  
+         </nav>
+          </div>
+                  <!-- food list  -->
+        <div class="mt-lg-3 primary row">
+          <section class="col-12 col-lg-6 px-lg-3 mt-4">
+            <div class=" d-flex justify-content-between rounded-4"  style="border: 1px solid rgb(226, 224, 224);">
+                <div class="d-flex  flex-column py-2 px-3 " style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;">
+                    <div class="d-flex flex-column justify-content-center">
+                          <span class="food-item" >Boiled Yam</span>
+                          <span class=" text-secondary" style="font-size: 13px;">1 piece of boiled yam</span>
+                    </div>
+                    <p class="text-success mt-auto fs-5">  #500 </p>        
+              </div>
+              <div>
+                  <img src="./Chowdeck_images/boiled yam.webp" alt="boiled yam" width="140" height="143" style="border-top-right-radius: 9px; border-bottom-right-radius: 9px;">
+              </div>
+          </div>
+        </section>
+
+        <section class="col-12 col-lg-6 px-lg-3 mt-4">
+          <div class=" d-flex justify-content-between rounded-4"  style="border: 1px solid rgb(226, 224, 224);">
+              <div class="d-flex  flex-column py-2 px-3 " style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;">
+                  <div class="d-flex flex-column justify-content-center">
+                        <span class="food-item" >spaghetti</span>
+                        <span class=" text-secondary" style="font-size: 13px;">1 portion of spaghetti</span>
+                  </div>
+                  <p class="text-success mt-auto fs-5">  #700 </p>        
+            </div>
+            <div>
+                <img src="./Chowdeck_images/spaghetti.webp" alt="spaghetti" width="140" height="143" style="border-top-right-radius: 9px; border-bottom-right-radius: 9px;">
+            </div>
+        </div>
+      </section>
+         
+      <section class="col-12 col-lg-6 px-lg-3 mt-4">
+        <div class=" d-flex justify-content-between rounded-4"  style="border: 1px solid rgb(226, 224, 224);">
+            <div class="d-flex  flex-column py-2 px-3 " style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;">
+                <div class="d-flex flex-column justify-content-center">
+                      <span class="food-item" >Egg Sauce</span>
+                      <span class=" text-secondary" style="font-size: 13px;">Egg sauce</span>
+                </div>
+                <p class="text-success mt-auto fs-5">  #550 </p>        
+          </div>
+          <div>
+              <img src="https://chowdeck.com/store/_next/image?url=https%3A%2F%2Ffiles.chowdeck.com%2Ffit-in%2F1200x675%2Fimages%2F2024%2F2024-07-30%2F910yorLtofIY6OJ1XL9tM.png&w=384&q=75" alt="egg sauce" width="140" height="143" style="border-top-right-radius: 9px; border-bottom-right-radius: 9px;">
+          </div>
+      </div>
+    </section>
+
+    <section class="col-12 col-lg-6 px-lg-3 mt-4">
+      <div class=" d-flex justify-content-between rounded-4"  style="border: 1px solid rgb(226, 224, 224);">
+          <div class="d-flex  flex-column py-2 px-3 " style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;">
+              <div class="d-flex flex-column justify-content-center">
+                    <span class="food-item" >Fried Rice</span>
+                    <span class=" text-secondary" style="font-size: 13px;">Fried rice</span>
+              </div>
+              <p class="text-success mt-auto fs-5">  #650 </p>        
+        </div>
+        <div>
+            <img src="./Chowdeck_images/fried_rice.webp" alt="fried rice" width="140" height="143" style="border-top-right-radius: 9px; border-bottom-right-radius: 9px;">
+        </div>
+    </div>
+  </section>
+
+  <section class="col-12 col-lg-6 px-lg-3 mt-4">
+    <div class=" d-flex justify-content-between rounded-4"  style="border: 1px solid rgb(226, 224, 224);">
+        <div class="d-flex  flex-column py-2 px-3 " style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;">
+            <div class="d-flex flex-column justify-content-center">
+                  <span class="food-item">Boiled Yam</span>
+                  <span class=" text-secondary" style="font-size: 13px;">boiled yam</span>
+            </div>
+            <p class="text-success mt-auto fs-5">  #650 </p>        
+      </div>
+      <div>
+          <img src="./Chowdeck_images/boiled yam.webp" alt="boiled yam" width="140" height="143" style="border-top-right-radius: 9px; border-bottom-right-radius: 9px;">
+      </div>
+  </div>
+</section>
+
+<section class="col-12 col-lg-6 px-lg-3 mt-4">
+  <div class=" d-flex justify-content-between rounded-4"  style="border: 1px solid rgb(226, 224, 224);">
+      <div class="d-flex  flex-column py-2 px-3 " style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;">
+          <div class="d-flex flex-column justify-content-center">
+                <span class="food-item">Fish Sauce</span>
+                <span class=" text-secondary" style="font-size: 13px;">Fish sauce</span>
+          </div>
+          <p class="text-success mt-auto fs-5">  #700 </p>        
+    </div>
+    <div>
+        <img src="./Chowdeck_images/Croacker Fish.webp" alt="fish sauce" width="140" height="143" style="border-top-right-radius: 9px; border-bottom-right-radius: 9px;">
+    </div>
+</div>
+</section>
+
+<section class="col-12 col-lg-6 px-lg-3 mt-4">
+  <div class=" d-flex justify-content-between rounded-4"  style="border: 1px solid rgb(226, 224, 224);">
+      <div class="d-flex  flex-column py-2 px-3 " style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;">
+          <div class="d-flex flex-column justify-content-center">
+                <span class="food-item">Concoction Rice</span>
+                <span class=" text-secondary" style="font-size: 13px;">Concoction rice</span>
+          </div>
+          <p class="text-success mt-auto fs-5">  #800</p>        
+    </div>
+    <div>
+        <img src="./Chowdeck_images/Concotion_rice.webp" alt="concotion rice" width="140" height="143" style="border-top-right-radius: 9px; border-bottom-right-radius: 9px;">
+    </div>
+</div>
+</section>
+
+<section class="col-12 col-lg-6 px-lg-3 mt-4">
+  <div class=" d-flex justify-content-between rounded-4"  style="border: 1px solid rgb(226, 224, 224);">
+      <div class="d-flex  flex-column py-2 px-3 " style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;">
+          <div class="d-flex flex-column justify-content-center">
+                <span class="food-item">Jollof Rice</span>
+                <span class=" text-secondary" style="font-size: 13px;">1 piece of jollof rice</span>
+          </div>
+          <p class="text-success mt-auto fs-5">  #700 </p>        
+    </div>
+    <div>
+        <img src="./Chowdeck_images/Jollof_rice.webp" alt="jollof rice" width="140" height="143" style="border-top-right-radius: 9px; border-bottom-right-radius: 9px;">
+    </div>
+</div>
+</section>
+
+<section class="col-12 col-lg-6 px-lg-3 mt-4">
+  <div class=" d-flex justify-content-between rounded-4"  style="border: 1px solid rgb(226, 224, 224);">
+      <div class="d-flex  flex-column py-2 px-3 " style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;">
+          <div class="d-flex flex-column justify-content-center">
+                <span class="food-item">Concoction Rice Mixed With Meat</span>
+                <span class=" text-secondary" style="font-size: 13px;">1 piece of concoction rice garnished with meat</span>
+          </div>
+          <p class="text-success mt-auto fs-5">  #800 </p>        
+    </div>
+    <div>
+        <img src="./Chowdeck_images/Con rice with meat.webp" alt="concotion meat" width="140" height="143" style="border-top-right-radius: 9px; border-bottom-right-radius: 9px;">
+    </div>
+</div>
+</section>
+
+<section class="col-12 col-lg-6 px-lg-3 mt-4">
+  <div class=" d-flex justify-content-between rounded-4"  style="border: 1px solid rgb(226, 224, 224);">
+      <div class="d-flex  flex-column py-2 px-3 " style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;">
+          <div class="d-flex flex-column justify-content-center">
+                <span class="food-item" >Ponmo</span>
+                <span class=" text-secondary" style="font-size: 13px;">Ponmo</span>
+          </div>
+          <p class="text-success mt-auto fs-5">  #500 </p>        
+    </div>
+    <div>
+        <img src="./Chowdeck_images/Ponmo.webp" alt="pomo" width="140" height="143" style="border-top-right-radius: 9px; border-bottom-right-radius: 9px;">
+    </div>
+</div>
+</section>
+
+<section class="col-12 col-lg-6 px-lg-3 mt-4">
+  <div class=" d-flex justify-content-between rounded-4"  style="border: 1px solid rgb(226, 224, 224);">
+      <div class="d-flex  flex-column py-2 px-3 " style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;">
+          <div class="d-flex flex-column justify-content-center">
+                <span class="food-item">Titus Fish</span>
+                <span class=" text-secondary" style="font-size: 13px;">Titus Fish</span>
+          </div>
+          <p class="text-success mt-auto fs-5">  #1,000 </p>        
+    </div>
+    <div>
+        <img src="https://chowdeck.com/store/_next/image?url=https%3A%2F%2Ffiles.chowdeck.com%2Ffit-in%2F1200x675%2Fimages%2F2024%2F2024-07-30%2Fwgg3nThbN9VtbVsBWWPIl.png&w=384&q=75" alt="titus fish" width="140" height="143" style="border-top-right-radius: 9px; border-bottom-right-radius: 9px;">
+    </div>
+</div>
+</section>
+
+<section class="col-12 col-lg-6 px-lg-3 mt-4">
+  <div class=" d-flex justify-content-between rounded-4"  style="border: 1px solid rgb(226, 224, 224);">
+      <div class="d-flex  flex-column py-2 px-3 " style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;">
+          <div class="d-flex flex-column justify-content-center">
+                <span class="food-item">Beef</span>
+                <span class=" text-secondary" style="font-size: 13px;">1 piece of beef</span>
+          </div>
+          <p class="text-success mt-auto fs-5">  #650 </p>        
+    </div>
+    <div>
+        <img src="https://chowdeck.com/store/_next/image?url=https%3A%2F%2Ffiles.chowdeck.com%2Ffit-in%2F1200x675%2Fimages%2Fufl53yqn1sspv4ru5bld%2F1686747007.jpg&w=384&q=75" alt="beef" width="140" height="143" style="border-top-right-radius: 9px; border-bottom-right-radius: 9px;">
+    </div>
+</div>
+</section>
+
+<section class="col-12 col-lg-6 px-lg-3 mt-4">
+  <div class=" d-flex justify-content-between rounded-4"  style="border: 1px solid rgb(226, 224, 224);">
+      <div class="d-flex  flex-column py-2 px-3 " style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;">
+          <div class="d-flex flex-column justify-content-center">
+                <span class="food-item"> Kote Fish</span>
+                <span class=" text-secondary" style="font-size: 13px;">Kote Fish</span>
+          </div>
+          <p class="text-success mt-auto fs-5">  #1,200 </p>        
+    </div>
+    <div>
+        <img src="./Chowdeck_images/Croacker Fish.webp" alt="kote fish" width="140" height="143" style="border-top-right-radius: 9px; border-bottom-right-radius: 9px;">
+    </div>
+</div>
+</section>
+
+<section class="col-12 col-lg-6 px-lg-3 mt-4">
+  <div class=" d-flex justify-content-between rounded-4"  style="border: 1px solid rgb(226, 224, 224);">
+      <div class="d-flex  flex-column py-2 px-3 " style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;">
+          <div class="d-flex flex-column justify-content-center">
+                <span class="food-item">Croaker Fish</span>
+                <span class=" text-secondary" style="font-size: 13px;">Croaker fish</span>
+          </div>
+          <p class="text-success mt-auto fs-5">  #1,800 </p>        
+    </div>
+    <div>
+        <img src="./Chowdeck_images/Croacker Fish.webp" alt="croaker fish" width="140" height="143" style="border-top-right-radius: 9px; border-bottom-right-radius: 9px;">
+    </div>
+</div>
+</section>
+<section class="col-12 col-lg-6 px-lg-3 mt-4">
+  <div class=" d-flex justify-content-between rounded-4"  style="border: 1px solid rgb(226, 224, 224);">
+      <div class="d-flex  flex-column py-2 px-3 " style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;">
+          <div class="d-flex flex-column justify-content-center">
+                <span class="food-item">Turkey Big</span>
+                <span class=" text-secondary" style="font-size: 13px;">1 big turkey</span>
+          </div>
+          <p class="text-success mt-auto fs-5">  #5,000 </p>        
+    </div>
+    <div>
+        <img src="./Chowdeck_images/Turkey.webp" alt="turkey big" width="140" height="143" style="border-top-right-radius: 9px; border-bottom-right-radius: 9px;">
+    </div>
+</div>
+</section>
+<section class="col-12 col-lg-6 px-lg-3 mt-4">
+  <div class=" d-flex justify-content-between rounded-4"  style="border: 1px solid rgb(226, 224, 224);">
+      <div class="d-flex  flex-column py-2 px-3 " style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;">
+          <div class="d-flex flex-column justify-content-center">
+                <span class="food-item">Chicken Big</span>
+                <span class=" text-secondary" style="font-size: 13px;">1 big chicken</span>
+          </div>
+          <p class="text-success mt-auto fs-5">  #3,200 </p>        
+    </div>
+    <div>
+        <img src="https://chowdeck.com/store/_next/image?url=https%3A%2F%2Ffiles.chowdeck.com%2Ffit-in%2F1200x675%2Fimages%2Fastgxajlknjsviihi591%2F1686747601.jpg&w=384&q=75" alt="chicken big" width="140" height="143" style="border-top-right-radius: 9px; border-bottom-right-radius: 9px;">
+    </div>
+</div>
+</section>
+<section class="col-12 col-lg-6 px-lg-3 mt-4">
+  <div class=" d-flex justify-content-between rounded-4"  style="border: 1px solid rgb(226, 224, 224);">
+      <div class="d-flex  flex-column py-2 px-3 " style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;">
+          <div class="d-flex flex-column justify-content-center">
+                <span class="food-item">Chicken Medium</span>
+                <span class=" text-secondary" style="font-size: 13px;">1 medium chicken</span>
+          </div>
+          <p class="text-success mt-auto fs-5">  #3,000 </p>        
+    </div>
+    <div>
+        <img src="https://chowdeck.com/store/_next/image?url=https%3A%2F%2Ffiles.chowdeck.com%2Ffit-in%2F1200x675%2Fimages%2Fastgxajlknjsviihi591%2F1686747601.jpg&w=384&q=75" alt="chicken medium" width="140" height="143" style="border-top-right-radius: 9px; border-bottom-right-radius: 9px;">
+    </div>
+</div>
+</section>
+<section class="col-12 col-lg-6 px-lg-3 mt-4">
+  <div class=" d-flex justify-content-between rounded-4"  style="border: 1px solid rgb(226, 224, 224);">
+      <div class="d-flex  flex-column py-2 px-3 " style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;">
+          <div class="d-flex flex-column justify-content-center">
+                <span class="food-item">Water</span>
+                <span class=" text-secondary" style="font-size: 13px;">1 bottle water</span>
+          </div>
+          <p class="text-success mt-auto fs-5">  #250 </p>        
+    </div>
+    <div>
+        <img src="./Chowdeck_images/Water.webp" alt="bottle water" width="140" height="143" style="border-top-right-radius: 9px; border-bottom-right-radius: 9px;">
+    </div>
+</div>
+</section>
+<section class="col-12 col-lg-6 px-lg-3 mt-4">
+  <div class=" d-flex justify-content-between rounded-4"  style="border: 1px solid rgb(226, 224, 224);">
+      <div class="d-flex  flex-column py-2 px-3 " style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;">
+          <div class="d-flex flex-column justify-content-center">
+                <span class="food-item">Fried Plantain</span>
+                <span class=" text-secondary" style="font-size: 13px;">Fried plantain</span>
+          </div>
+          <p class="text-success mt-auto fs-5">  #600 </p>        
+    </div>
+    <div>
+        <img src="https://chowdeck.com/store/_next/image?url=https%3A%2F%2Ffiles.chowdeck.com%2Ffit-in%2F1200x675%2Fimages%2F2024%2F2024-07-30%2FL7eeMfXKn2RAbWAyWlt19.png&w=384&q=75" alt="fried plantain" width="140" height="143" style="border-top-right-radius: 9px; border-bottom-right-radius: 9px;">
+    </div>
+</div>
+</section>
+<section class="col-12 col-lg-6 px-lg-3 mt-4">
+  <div class=" d-flex justify-content-between rounded-4"  style="border: 1px solid rgb(226, 224, 224);">
+      <div class="d-flex  flex-column py-2 px-3 " style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;">
+          <div class="d-flex flex-column justify-content-center">
+                <span class="food-item">Plantain</span>
+                <span class=" text-secondary" style="font-size: 13px;">1 portion of plantain</span>
+          </div>
+          <p class="text-success mt-auto fs-5">  #650 </p>        
+    </div>
+    <div>
+        <img src="./Chowdeck_images/Plantain.webp" alt="plantain" width="140" height="143" style="border-top-right-radius: 9px; border-bottom-right-radius: 9px;">
+    </div>
+</div>
+</section>
+<section class="col-12 col-lg-6 px-lg-3 mt-4">
+  <div class=" d-flex justify-content-between rounded-4"  style="border: 1px solid rgb(226, 224, 224);">
+      <div class="d-flex  flex-column py-2 px-3 " style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;">
+          <div class="d-flex flex-column justify-content-center">
+                <span class="food-item">Sliced Bread</span>
+                <span class=" text-secondary" style="font-size: 13px;">1 sliced bread</span>
+          </div>
+          <p class="text-success mt-auto fs-5">  #250 </p>        
+    </div>
+    <div>
+        <img src="./Chowdeck_images/sliced_Bread.webp" alt="sliced bread" width="140" height="143" style="border-top-right-radius: 9px; border-bottom-right-radius: 9px;">
+    </div>
+</div>
+</section>
+<section class="col-12 col-lg-6 px-lg-3 mt-4">
+  <div class=" d-flex justify-content-between rounded-4"  style="border: 1px solid rgb(226, 224, 224);">
+      <div class="d-flex  flex-column py-2 px-3 " style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;">
+          <div class="d-flex flex-column justify-content-center">
+                <span class="food-item">Sliced Bread Big</span>
+                <span class=" text-secondary" style="font-size: 13px;">1 big sliced bread</span>
+          </div>
+          <p class="text-success mt-auto fs-5">  #1,600 </p>        
+    </div>
+    <div>
+        <img src="./Chowdeck_images/sliced_Bread.webp" alt="big sliced bread" width="140" height="143" style="border-top-right-radius: 9px; border-bottom-right-radius: 9px;">
+    </div>
+</div>
+</section>
+<section class="col-12 col-lg-6 px-lg-3 mt-4">
+  <div class=" d-flex justify-content-between rounded-4"  style="border: 1px solid rgb(226, 224, 224);">
+      <div class="d-flex  flex-column py-2 px-3 " style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;">
+          <div class="d-flex flex-column justify-content-center">
+                <span class="food-item">Unsliced Bread</span>
+                <span class=" text-secondary" style="font-size: 13px;">1 unsliced bread</span>
+          </div>
+          <p class="text-success mt-auto fs-5">  #1,800 </p>        
+    </div>
+    <div>
+        <img src="https://chowdeck.com/store/_next/image?url=https%3A%2F%2Ffiles.chowdeck.com%2Ffit-in%2F1200x675%2Fimages%2Fe0cyo67ri6ht3sapg2r3%2F1686749553.jpg&w=384&q=75" alt="unsliced bread" width="140" height="143" style="border-top-right-radius: 9px; border-bottom-right-radius: 9px;">
+    </div>
+</div>
+</section>
+<section class="col-12 col-lg-6 px-lg-3 mt-4">
+  <div class=" d-flex justify-content-between rounded-4"  style="border: 1px solid rgb(226, 224, 224);">
+      <div class="d-flex  flex-column py-2 px-3 " style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;">
+          <div class="d-flex flex-column justify-content-center">
+                <span class="food-item">Milk Bread</span>
+                <span class=" text-secondary" style="font-size: 13px;">Milk bread</span>
+          </div>
+          <p class="text-success mt-auto fs-5">  #1,200 </p>        
+    </div>
+    <div>
+        <img src="https://chowdeck.com/store/_next/image?url=https%3A%2F%2Ffiles.chowdeck.com%2Ffit-in%2F1200x675%2Fimages%2F2024%2F2024-07-30%2FcxEYm04kj0WKeZjiiQJGD.png&w=384&q=75" alt="milk bread" width="140" height="143" style="border-top-right-radius: 9px; border-bottom-right-radius: 9px;">
+    </div>
+</div>
+</section>
+<section class="col-12 col-lg-6 px-lg-3 mt-4">
+  <div class=" d-flex justify-content-between rounded-4"  style="border: 1px solid rgb(226, 224, 224);">
+      <div class="d-flex  flex-column py-2 px-3 " style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;">
+          <div class="d-flex flex-column justify-content-center">
+                <span class="food-item">Chicken Pie</span>
+                <span class=" text-secondary" style="font-size: 13px;">Chicken pie</span>
+          </div>
+          <p class="text-success mt-auto fs-5">  #700</p>        
+    </div>
+    <div>
+        <img src="./Chowdeck_images/Chicken_pie.webp" alt="chicken pie" width="140" height="143" style="border-top-right-radius: 9px; border-bottom-right-radius: 9px;">
+    </div>
+</div>
+</section>
+<section class="col-12 col-lg-6 px-lg-3 mt-4">
+  <div class=" d-flex justify-content-between rounded-4"  style="border: 1px solid rgb(226, 224, 224);">
+      <div class="d-flex  flex-column py-2 px-3 " style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;">
+          <div class="d-flex flex-column justify-content-center">
+                <span class="food-item">Meatpie</span>
+                <span class=" text-secondary" style="font-size: 13px;">meatpie</span>
+          </div>
+          <p class="text-success mt-auto fs-5">  #700</p>        
+    </div>
+    <div>
+        <img src="./Chowdeck_images/Meatpie.webp" alt="meat pie" width="140" height="143" style="border-top-right-radius: 9px; border-bottom-right-radius: 9px;">
+    </div>
+</div>
+</section>
+<section class="col-12 col-lg-6 px-lg-3 mt-4">
+  <div class=" d-flex justify-content-between rounded-4"  style="border: 1px solid rgb(226, 224, 224);">
+      <div class="d-flex  flex-column py-2 px-3 " style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;">
+          <div class="d-flex flex-column justify-content-center">
+                <span class="food-item">Golden Scoop Ice Cream (small)</span>
+                <span class=" text-secondary" style="font-size: 13px;">Golden scoop ice cream (small)</span>
+          </div>
+          <p class="text-success mt-auto fs-5">  #1,000</p>        
+    </div>
+    <div>
+        <img src="./Chowdeck_images/Golden_scoop_icecream.webp" alt="golden scoop small" width="140" height="143" style="border-top-right-radius: 9px; border-bottom-right-radius: 9px;">
+    </div>
+</div>
+</section>
+<section class="col-12 col-lg-6 px-lg-3 mt-4">
+  <div class=" d-flex justify-content-between rounded-4"  style="border: 1px solid rgb(226, 224, 224);">
+      <div class="d-flex  flex-column py-2 px-3 " style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;">
+          <div class="d-flex flex-column justify-content-center">
+                <span class="food-item">Golden Scoop Ice Cream (Medium)</span>
+                <span class=" text-secondary" style="font-size: 13px;">Golden scoop ice cream (medium)</span>
+          </div>
+          <p class="text-success mt-auto fs-5">  #2,300</p>        
+    </div>
+    <div>
+        <img src="./Chowdeck_images/Golden scoop (medium).webp" alt="golden scoop med" width="140" height="143" style="border-top-right-radius: 9px; border-bottom-right-radius: 9px;">
+    </div>
+</div>
+</section>
+<section class="col-12 col-lg-6 px-lg-3 mt-4">
+  <div class=" d-flex justify-content-between rounded-4"  style="border: 1px solid rgb(226, 224, 224);">
+      <div class="d-flex  flex-column py-2 px-3 " style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;">
+          <div class="d-flex flex-column justify-content-center">
+                <span class="food-item">Ice Cream Small Size (Fan Ice)</span>
+                <span class=" text-secondary" style="font-size: 13px;">1 small size ice cream</span>
+          </div>
+          <p class="text-success mt-auto fs-5">  #1,100</p>        
+    </div>
+    <div>
+        <img src="./Chowdeck_images/Fanice.webp" alt="ice cream" width="140" height="143" style="border-top-right-radius: 9px; border-bottom-right-radius: 9px;">
+    </div>
+</div>
+</section>
+<section class="col-12 col-lg-6 px-lg-3 mt-4">
+  <div class=" d-flex justify-content-between rounded-4"  style="border: 1px solid rgb(226, 224, 224);">
+      <div class="d-flex  flex-column py-2 px-3 " style="border-top-left-radius: 10px; border-bottom-left-radius: 10px;">
+          <div class="d-flex flex-column justify-content-center">
+                <span class="food-item">Ice Cream Big Size (Fan Ice)</span>
+                <span class=" text-secondary" style="font-size: 13px;">1 big size ice cream</span>
+          </div>
+          <p class="text-success mt-auto fs-5">  #2,400</p>        
+    </div>
+    <div>
+        <img src="./Chowdeck_images/Fanice.webp" alt="ice cream" width="140" height="143" style="border-top-right-radius: 9px; border-bottom-right-radius: 9px;">
+    </div>
+</div>
+</section>
+
+
+
+
+
+
+        </div>
+    </main>
+    <aside class=" pt-3  ms-auto d-none d-lg-block " style="border-left: 1px solid rgb(216, 213, 213);width: 31%; " >
+        <div class="px-2 aside-div">
+                            <!-- add another pack  -->
+            <div class="d-flex align-items-center justify-content-between  general-div " >
+                 <p class="minor-font text-success pt-3 ">hot Bread Cafe-Ikotun</p>     
+                 <button class="rounded-4 px-3 py-1 btn minor-font " style="background-color: #E6F7F1; font-size: 13px;">+ Add another pack</button>
+            </div>
+
+                                <!-- Goods item   -->
+             <div class="my-3 px-3 py-2 rounded-3" style="border: 1px dashed  rgb(216, 213, 213);">
+                <div class="d-flex align-items-center justify-content-between " >
+                    <p class="minor-font pt-2 ">Pack 1</p>     
+                    <button class=" p-0 px-1 btn minor-font text-danger" style="background-color: #F3F4F6; font-size: 13px; border-radius: 50%;"> <i class="bi bi-trash3"></i> </button>
+               </div>
+               <div class="d-flex align-items-center justify-content-between  " >
+                    <div class="minor-font  pt-2">Chicken pie  <p style="color: #C9CDD4;">#700</p></div>     
+                    <button class="rounded-4 my-0 py-1 mt-1 btn minor-font " style="background-color: #F3F4F6; font-size: 13px;"> <span class="pe-2 my-0 py-0 ">-</span> 2 <span class="ps-2  my-0 py-0">+</span> </button>
+                </div>
+                <div class="d-flex align-items-center justify-content-between mt-2 " >
+                    <button class="rounded-4 px-2 py-1 btn " style="background-color: transparent; font-size: 12px; border: 1px solid rgb(234, 226, 226);">+ Add another pack</button>
+
+                    <button class="rounded-3 px-2 py-1 btn  " style="background-color: transparent; font-size: 12px; border: 1px dashed rgb(234, 226, 226);">Duplicate pack</button>
+               </div>
+             </div>
+                               <!-- payment method  -->
+             <div class="my-3" style="border-top: 1px solid rgb(216, 213, 213); border-bottom: 1px solid rgb(216, 213, 213);">
+                <div class="d-flex align-items-center justify-content-between " >
+                    <p class="milinal-font  pt-1 ">Payment Method</p>     
+                    <button class="rounded-4 px-3 py-1 btn milinal-font text-success mi-btn" style=" font-size: 13px;">Choose</button>
+               </div>
+               <div class="d-flex align-items-center justify-content-between " >
+                    <p class="milinal-font  ">Promo Method</p>     
+                    <button class="rounded-4 px-3 py-1 btn milinal-font text-success mi-btn" style=" font-size: 13px;">Choose</button>
+                </div>
+                <div class="d-flex align-items-center justify-content-between " >
+                    <p class="milinal-font  ">21 Kayode St</p>     
+                    <button class="rounded-4 px-3 py-1 btn milinal-font text-success mi-btn" style=" font-size: 13px;">Change</button>
+                </div>
+                <div class="d-flex align-items-center justify-content-between " >
+                    <p class="milinal-font  ">Delivery instructions</p>     
+                    <button class="rounded-4 px-3 py-1 btn milinal-font text-success mi-btn" style=" font-size: 13px;">Add</button>
+                </div>
+                <div class="d-flex align-items-center justify-content-between " >
+                    <p class="milinal-font   ">Vendor instructions</p>     
+                    <button class="rounded-4 px-3 py-1 btn milinal-font text-success mi-btn" style=" font-size: 13px;">Add</button>
+                </div>
+             </div>
+                           <!-- delivery pin info  -->
+             <div class="rounded-3 px-3 pt-3 py-2 mb-3 d-flex align-items-center gap-1 " style="background-color: #E6F7F1; ">
+                <i class="bi bi-info-circle" style="font-size: 12px; color: #32B98A;"></i>
+                 <div style="font-size: 14px; font-weight: 500;">Delivery includes PIN confirmation
+                    <p style="font-size: 12px; font-weight: 400;">This helps ensure that your order is given to the right person</p>
+                 </div>
+             </div>
+                           <!-- place order  -->
+            <div style="border-top: 1px solid rgb(216, 213, 213);"  class="pt-5">
+                <div class="d-flex align-items-center justify-content-between">
+                    <p>Sub total (1 item)</p>
+                    <p>#700</p>
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                    <p>Delivery fee</p>
+                    <p>#0</p>
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                    <p>Service fee</p>
+                    <p>#0</p>
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                    <p style="font-weight: 600; font-size: 18px;">Total</p>
+                    <p style="font-weight: 600; font-size: 18px;">#700</p>
+                </div>
+            </div>
+             <button class="btn text-light border-none w-100 py-3 rounded-3" style="background-color: #0C513F;font-weight: 600;">Place order</button>
+             <button class="btn border-none w-100 py-3 rounded-3 my-3" style="background-color: #FDEFEB;font-weight: 600; color: #ED5E3B;">Clear order</button>
+             <div class="text-center"><button style="background-color: transparent; border: none; color: #59C7A0;font-size: 15px;"> <i class="bi bi-bookmark "  style="color: #59C7A0;"></i> Save for later</button></div>
+        </div>
+      
+    </aside>
+  </div>
+ 
+
+    <footer class="row my-footer pt-5 mt-5 border border-2 border-danger" style="border-top: 1px solid rgb(216, 213, 213) ; border-bottom:1px solid rgb(216, 213, 213) ; ">
+        <div class="col-6">
+            <img src="./Chowdeck_images/logo-footer.webp" alt="">
+        </div>
+        <div class="col-12 col-lg-6 d-flex flex-wrap border border-2 border-primary">
+            <ul class="d-flex flex-column gap-3  mx-0 px-0 col-6 col-lg-3">
+                <p class="fw-font">LOCATIONS</p>
+             <a href=""> <li>King Glab Maryland</li> </a>  
+            <a href=""><li>Unilag</li> </a>    
+             <a href=""><li>Alagomeji</li> </a>   
+              <a href=""> <li>Fola Agoro</li> </a>
+             <a href=""><li>Ibadan 1</li> </a>   
+             <a href=""><li>Ibadan 2</li> </a>   
+              <a href=""> <li style="font-size: 13px; text-decoration: underline; color: #32B98A;">See more</li> </a> 
+            </ul>
+            <ul class="d-flex flex-column gap-3  px-0 col-6 col-lg-3 border border-2 border-danger">
+                <p class="fw-font">DOWNLOAD</p>
+            <a href=""> <li>Google Play Store</li></a>   
+            <a href=""> <li>iOS App Store</li> </a>   
+
+            </ul>
+            <ul class="d-flex flex-column gap-3   px-0 col-6 col-lg-3">
+                <p class="fw-font">GET HELP</p>
+             <a href="">   <li>Email</li> </a>
+            <a href="">    <li>Chat</li>  </a>
+            </ul>
+            <ul class="d-flex flex-column gap-3 ms-0 ms-md-5  px-0 col-6 col-lg-3">
+                <p class="fw-font">LEGAL</p>
+            <a href="">   <li>Privacy Policy</li> </a> 
+           <a href="">    <li>Terms of use</li> </a> 
+            </ul>
+    </div>
+    </footer>
+
+    <div class="d-flex align-items-center justify-content-between mt-3 ">
+        <p class="last-div">© 2022, <a href="" class="last-div"> Chowdeck.</a> </p>
+        <div>
+            <i class="bi bi-facebook mx-2"  style="color:  #5C686D;"></i>
+            <i class="bi bi-instagram mx-2"  style="color:  #5C686D;" ></i>
+        </div>
+      </div>
+</div>
+
+   
+<script src="./js/bootstrap.min.js">
+</script>
+    <script>
+          let Fbtn = document.getElementById("Fbtn")
+              let FirstBtn = document.getElementById("Mbtn") ;
+         FirstBtn.onclick = function here () {
+            FirstBtn.style = "background-color : #198754 ; padding:4px 8px; color:white ; font-size :15px; margin-left :5px ;"
+             Fbtn.innerText = "deliver" 
+             Fbtn.style = "background-color : #E6F7F1 ;"
+             Fbtn.style.color = "black" ;
+         }
+         here ()  
+    </script>
+
+</body>
+</html>

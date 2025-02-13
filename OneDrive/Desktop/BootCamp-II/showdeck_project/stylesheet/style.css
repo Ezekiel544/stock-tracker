@@ -1,0 +1,151 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+
+.modal-input:focus{
+    outline: none;
+}
+.prt{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+    background-color: white;
+    text-align: center;
+    /* padding: 10px; */
+    z-index: 2000;
+}
+
+.div-body{
+    margin-top: 90px;
+}
+header{
+    position: relative;
+}
+.geo-div{
+    position: relative;
+}
+.max-font{
+    font-size: 15px;
+}
+.minor-font{
+    font-size: 13px;
+}
+.mini-font{
+    font-size: 12px;
+}
+.milinal-font{
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.Extra-padding{
+    padding: 0 15px;
+}
+.general-div{
+    border-bottom: 1px solid rgb(216, 213, 213);
+}
+.nav-for-span{
+    overflow-x: scroll;
+     
+}
+.nav-for-span::-webkit-scrollbar{
+    display: none;
+}
+.mini a{
+    color: gray;
+    padding: 2px 5px; 
+    font-size: 15px;
+    border-radius: 12px;
+    font-size: 14px;
+    /* border: 2px solid black; */
+    text-align: center;
+}
+.mini:hover{
+    background-color: #E6F7F1;
+}
+nav a{
+  text-decoration: none;
+}
+.food-item{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.nav-icon{
+    padding: 7px 10px;
+}
+aside{
+    position: sticky;
+    top: 20px;
+   
+    height: 87vh;
+}
+.aside-div{
+    height: 80%;
+    overflow-y: scroll;
+}
+ul li{
+   list-style: none;
+   color: #5C686D;
+}
+.last-div{
+    list-style: none;
+    color: #5C686D;
+    text-decoration: none;
+ }
+ul li:hover{
+    text-decoration: underline;
+}
+ul a {
+    color: black;
+    text-decoration: none;
+    
+}
+
+.fw-font{
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+/* .last-btn-div{
+    position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+} */
+
+/* Extra Small Devices */
+@media(max-width:575px){
+    .hero-img{
+        height: 190px; 
+    }
+    .general-div{
+        border-bottom: none;
+    }
+   
+     .btn-div{
+        order: 3;
+     }
+     .min-order{
+        order: 5;
+     }
+     .div-body{
+        margin-top: 140px;
+    }
+}
+/* Large */
+@media(min-width:992px){
+    .hero-img{
+        height: 260px;
+    }
+    .nav-icon{
+    padding: 11px 14px;
+    }
+   
+}
+/* Small Devices */
+

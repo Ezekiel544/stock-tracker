@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.e-span{
+    background-color: #F4511E;
+    color: white;
+    padding: 2px 11px;
+    border-radius: 50%;
+    font-size: 18px;
+}
+.google-logo{
+    margin-right: 50%;
+}
+@media(max-width:439px){
+  .google-logo{
+    margin-right: 28%;
+   
+}  
+
+}
+.input-search{
+   
+    border: 2px solid green;
+    
+}
+
+.input-search:focus{
+   outline: none;
+}
+.input-search-div{
+    position: relative;
+}
+.my-search{
+    position: absolute;
+    top: 10px;
+    left: 5%;
+}
+.my-lg-search{
+    position: absolute;
+     top: 10px;
+     right: 12%;
+      /* right:90px;
+     top: 9px; */
+}
+.my-lg-cam{
+    position: absolute;
+     top: 6px;
+      right: 18%;
+      /* right:130px;
+     top: 4px; */
+}
+.my-lg-mic{
+    position: absolute;
+     top: 6px;
+     right: 24%;
+     /* right:170px;
+     top: 4px; */
+   
+}
+.my-cam{
+    position: absolute;
+    top: 10px;
+    left: 93%;
+}
+.my-mic{
+    position: absolute;
+    top: 10px;
+    left: 85%;
+}
+.nav-for-span{
+    overflow-x: scroll;
+    
+  
+}
+.nav-for-span::-webkit-scrollbar{
+    display: none;
+}
+
+@media(min-width:600px){
+    .my-search{
+        left: 3%;
+    }
+    .my-mic{
+        left: 88%;
+    }
+  
+}
+
+.mini-font{
+    font-size: 13px;
+    padding-bottom: 10px;
+    padding-bottom: 17px;
+  
+}
+.px-font{
+    font-size: 13px;
+}
+.little-font{
+    font-size: 15px;
+}
+.mini-active{
+    color: black;
+}
+.mini-font:hover{
+    border-bottom:3px solid black ;
+       cursor: pointer;
+}
+
+
+
+
+@media(min-width:992px){
+    .nav-for-span{
+        gap: 47px;
+    }
+    /* .mini-active{
+        margin-left: 149px;
+    }
+    .Dictionary-div{
+        margin-left: 110px;
+    } */
+    .empath{
+       border-left: 1px solid rgb(188, 186, 186);
+    }
+}
+@media (max-width:344px){
+.px-p{
+    font-size: 11px;
+}
+}
+.mini-font-tool{
+    margin-left: 97px;
+}
